@@ -1,0 +1,61 @@
+@import "../../styles/_vars";
+
+.card {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-grow: 1;
+  border-radius: 20px;
+  box-shadow: $box-shadow;
+  padding: 4rem 4rem;
+  background: var(#{--components-bg-default});
+  transition: 0.3s;
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      margin-right: 1rem;
+      .temp {
+        font-size: 9.5rem;
+        font-weight: 500;
+        color: $primary_color;
+        margin-bottom: 1rem;
+      }
+      .day {
+        font-size: 4rem;
+        font-weight: 400;
+        color: var(#{--text-color-default});
+      }
+    }
+    img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    margin-top: 3.2rem;
+    font-weight: 400;
+    color: $dark-grey_color;
+    .time {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .card {
+    .header {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}

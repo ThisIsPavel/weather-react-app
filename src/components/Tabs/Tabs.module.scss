@@ -1,0 +1,16 @@
+@import "../../styles/_vars";
+.tabs {
+  display: flex;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .active {
+    background: var(#{--cards-bg-default});
+    color: var(#{--text-color-default});
+  }
+}

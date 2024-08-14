@@ -1,0 +1,17 @@
+@import "../../../styles/vars";
+
+.label {
+  color: var(#{--cards-bg-default});
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.input {
+  color: var(#{--text-color-default});
+  text-align: left;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background: var(#{--cards-bg-default});
+  width: 20rem;
+}

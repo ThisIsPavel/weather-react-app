@@ -1,0 +1,9 @@
+@import "../../styles/vars";
+
+.error {
+  color: var(#{--text-color-default});
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10rem;
+}

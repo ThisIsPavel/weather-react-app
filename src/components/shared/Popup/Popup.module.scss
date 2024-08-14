@@ -1,0 +1,72 @@
+@import "../../../styles/_vars";
+
+.blur {
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+.popup {
+  display: flex;
+  gap: 3rem;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1000;
+  padding: 4rem;
+  max-width: 75rem;
+  width: 100%;
+  box-shadow: $box-shadow;
+  border-radius: 0.8rem;
+  background: var(#{--components-bg-default});
+  .position {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      transition: 0.5s;
+    }
+    &:hover {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .current__day {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0;
+    gap: 1.8rem;
+    .temp {
+      font-size: 6rem;
+      font-weight: 500;
+      color: $primary_color;
+    }
+    .day {
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(#{--text-color-default});
+    }
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: auto;
+  }
+}

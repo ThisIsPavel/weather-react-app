@@ -1,0 +1,48 @@
+@import "../../styles/_vars";
+
+.days {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  box-shadow: $box-shadow;
+  border-radius: 0 0 20px 20px;
+  background: var(#{--components-bg-default});
+}
+.card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: var(#{--cards-bg-default});
+  box-shadow: $box-shadow;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 15rem;
+  transition: 0.3s;
+  min-height: 20rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-1rem);
+  }
+  .day,
+  .temp_day {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(#{--text-color-default});
+  }
+  .date,
+  .temp_night,
+  .info {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $dark-grey_color;
+  }
+  svg {
+    width: 5rem;
+    height: 5rem;
+  }
+}

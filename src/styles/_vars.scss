@@ -1,0 +1,39 @@
+$primary_color: #4793ff;
+
+$dark-grey_color: #939cb0;
+$box-shadow: 2px 5px 25px -3px #b4b4b45b;
+
+//bg color
+$body-bg-dark: #0d1117;
+$body-bg-light: #fff;
+
+$components-bg-dark: #4f4f4f;
+$components-bg-light: #fff;
+
+$cards-bg-dark: #2e3035;
+$cards-bg-light: #4793ff33;
+
+//text color
+$light-color: #000;
+$dark-color: #fff;
+$base-color: #939cb0;
+
+:root {
+  //bg color
+  --body-bg-dark: #{$body-bg-dark};
+  --body-bg-light: #{$body-bg-light};
+  --body-bg-default: var(--body-bg-light);
+
+  --components-bg-dark: #{$components-bg-dark};
+  --components-bg-light: #{$components-bg-light};
+  --components-bg-default: var(--components-bg-light);
+
+  --cards-bg-dark: #{$cards-bg-dark};
+  --cards-bg-light: #{$cards-bg-light};
+  --cards-bg-default: var(--cards-bg-light);
+
+  //text color
+  --text-color-dark: #{$dark-color};
+  --text-color-light: #{$light-color};
+  --text-color-default: var(#{--text-color-light});
+}
